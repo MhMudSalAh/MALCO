@@ -1,0 +1,17 @@
+/* 
+ Localizable.strings
+ MALCO
+ 
+ Created by MhMuD SalAh on 04/02/2021.
+*/
+
+"app_name" = "مالكو";
+"malco" = "مالكو";
+"welcome" = "مرحبا بك في مالكو";
+"signIn" = "تسجيل الدخول";
+"signUp" = "إنشاء حساب";
+"or" = "أو";
+"have_account" = "لديك بالفعل حساب؟";
+"email" = "أدخل البريد الالكتروني";
+"password" = "أدخل الرقم السري";
+"don't_have_account" = "ليس لديك حساب؟";

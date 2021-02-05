@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Controller-->
+        <scene sceneID="cBh-JB-94a">
+            <objects>
+                <viewController storyboardIdentifier="SplashController" wantsFullScreenLayout="YES" id="XvQ-4C-lnQ" customClass="SplashController" customModule="MALCO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OQU-7H-r3N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MEv-HG-udB">
+                                <rect key="frame" x="0.0" y="116.5" width="414" height="645"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5c-sH-BIo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="PSp-L1-h9f"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="5Tb-Xt-Yj8">
+                                        <rect key="frame" x="0.0" y="55" width="414" height="322.5"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gk-30-Ryq">
+                                        <rect key="frame" x="0.0" y="397.5" width="414" height="247.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Tb-Xt-Yj8" firstAttribute="height" secondItem="MEv-HG-udB" secondAttribute="height" multiplier="0.5" id="fUG-XU-ZFC"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="sOZ-dG-j8Y">
+                                <rect key="frame" x="0.0" y="761.5" width="103.5" height="134.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_top" translatesAutoresizingMaskIntoConstraints="NO" id="gdy-4n-htR">
+                                <rect key="frame" x="0.0" y="0.0" width="116" height="116.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QHP-CK-zdg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gdy-4n-htR" firstAttribute="top" secondItem="OQU-7H-r3N" secondAttribute="top" id="FoJ-Bh-ELZ"/>
+                            <constraint firstItem="sOZ-dG-j8Y" firstAttribute="leading" secondItem="OQU-7H-r3N" secondAttribute="leading" id="Ims-WL-j1e"/>
+                            <constraint firstItem="MEv-HG-udB" firstAttribute="leading" secondItem="QHP-CK-zdg" secondAttribute="leading" id="Qxm-mi-Zgu"/>
+                            <constraint firstItem="gdy-4n-htR" firstAttribute="height" secondItem="OQU-7H-r3N" secondAttribute="height" multiplier="0.13" id="SaQ-lW-srk"/>
+                            <constraint firstItem="sOZ-dG-j8Y" firstAttribute="width" secondItem="OQU-7H-r3N" secondAttribute="width" multiplier="0.25" id="Utk-b7-lNa"/>
+                            <constraint firstItem="gdy-4n-htR" firstAttribute="width" secondItem="OQU-7H-r3N" secondAttribute="width" multiplier="0.28" id="Vlh-Ex-8tZ"/>
+                            <constraint firstAttribute="bottom" secondItem="sOZ-dG-j8Y" secondAttribute="bottom" id="hFE-HD-M1e"/>
+                            <constraint firstItem="sOZ-dG-j8Y" firstAttribute="height" secondItem="OQU-7H-r3N" secondAttribute="height" multiplier="0.15" id="jh2-An-nSV"/>
+                            <constraint firstItem="sOZ-dG-j8Y" firstAttribute="top" secondItem="MEv-HG-udB" secondAttribute="bottom" id="kN0-gR-bWD"/>
+                            <constraint firstItem="gdy-4n-htR" firstAttribute="leading" secondItem="OQU-7H-r3N" secondAttribute="leading" id="nUz-EQ-ZCT"/>
+                            <constraint firstItem="QHP-CK-zdg" firstAttribute="trailing" secondItem="MEv-HG-udB" secondAttribute="trailing" id="nWe-AO-jci"/>
+                            <constraint firstItem="MEv-HG-udB" firstAttribute="top" secondItem="gdy-4n-htR" secondAttribute="bottom" id="ufU-Rh-T8f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyk-94-LDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat" width="367" height="419"/>
+        <image name="main_bottom" width="150" height="222"/>
+        <image name="main_top" width="252" height="294"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
